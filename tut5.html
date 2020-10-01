@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop_down menu </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+   body{
+     background-color: blueviolet;
+
+   }
+   nav{
+       display: flex;
+      align-items: center;
+      justify-content: center;
+     
+   }
+   .navbar ul{
+      padding: 0px;
+   } 
+   .navbar ul li{
+     float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 5px 0px;
+    width: 167px;
+    text-align: center;
+    line-height: 50px;
+   }
+   .navbar ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 23px;
+     font-family: 'Oswald', sans-serif;
+   }
+   .navbar ul li:hover{
+      background-color: #7e17deab;
+      
+   }
+   .navbar ul li:hover > a{
+     color: black;
+   }
+  .navbar ul li ul{
+     display: none;
+    } 
+    
+    .navbar ul li:hover > ul{
+      display: block;
+    }
+   .navbar ul li ul li{
+     position: relative;
+
+   }
+   .navbar ul li ul li ul{
+     position: absolute;
+     left: 167px;
+     top: 0px;
+   
+   }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <nav>
+      <ul>
+        <li class="item-1"><a href="#">button-1</a></li>
+        <li class="item-2"><a href="#">button-2<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+        <ul>
+          <li class="subitem-1"><a href="#">sub-button-1</a>
+            <ul>
+              <li><a href="#">subsubbutton1</a></li>
+            <li><a href="#">subsubbutton2</a></li>
+            <li><a href="#">subsubbutton3</a></li>
+            
+        </ul>
+      </li>
+          <li class="subitem-2"><a href="#">sub-button-2</a></li>
+          <li class="subitem-3"><a href="#">sub-button-3</a></li>
+          <li class="subitem-4"><a href="#">sub-button-4</a>
+            <ul>
+              <li><a href="#">subsubbutton1</a></li>
+            <li><a href="#">subsubbutton2</a></li>
+            <li><a href="#">subsubbutton3</a></li>
+            <li><a href="#">subsubbutton3</a></li>
+            <li><a href="#">subsubbutton3</a></li>
+            <li><a href="#">subsubbutton3</a></li>
+            <li><a href="#">subsubbutton3</a></li>
+            <li><a href="#">subsubbutton3</a></li>
+          </ul>
+          </li>
+        </ul>
+        </li>
+        <li class="item-3"><a href="#">button-3</a></li>
+        <li class="item-4"><a href="#">button-4</a></li>
+        <li class="item-5"><a href="#">button-5<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></a>
+          <ul class="sub_menu">
+            <li class="subitem-1"><a href="#">sub-button-1</a></li>
+            <li class="subitem-2"><a href="#">sub-button-2</a></li>
+            <li class="subitem-3"><a href="#">sub-button-3</a>
+              <ul>
+                <li><a href="#">subsubbutton1</a></li>
+              <li><a href="#">subsubbutton2</a></li>
+              <li><a href="#">subsubbutton3</a></li>
+              <li><a href="#">subsubbutton3</a></li>
+              <li><a href="#">subsubbutton3</a></li>
+              <li><a href="#">subsubbutton3</a></li>
+              <li><a href="#">subsubbutton3</a></li>
+              <li><a href="#">subsubbutton3</a></li>
+            </ul>
+            </li>
+            <li class="subitem-4"><a href="#">sub-button-4</a></li>
+          </ul>
+            </li>
+          </ul>
+          </li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>
